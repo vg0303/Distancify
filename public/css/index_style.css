@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;  /*helps to navigate to a section of the website as mentioned in the navbar*/
+}
+
+
+
+
+/* NAVBAR---------------------------------------------------------------------------------------------------------------------------------------- */
+.navbar{
+    display: flex; /*flex helps to bring things in a row*/
+    align-items: center;
+    position: sticky; /*to make the navbar stick to the page  */
+    top: 0;
+}
+
+.navbar::before{
+    content: "";
+    background-color: #e2e1dc;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#logo{
+    margin: 0px 10px;
+}
+
+#logo img{
+    height: 70px;
+    margin: 0px 3px; 
+    border-radius: 600px;
+    width: 70px;
+}
+
+.navbar ul{ 
+    display: flex;
+}
+
+.item{
+    height: 100%;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    margin: 15px 0px;
+}
+
+.item-first{
+    padding-left: 10px;
+}
+
+.nav-content{
+    display: block; 
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.distancify{
+    font-size: 27px;
+    font-family: 'Sacramento', cursive;
+    padding: 0 0 0 10px;
+}
+
+.hover:hover{
+    color: black;
+    background-color: #f0efeb;
+}
+
+
+
+
+
+/* HOME-------------------------------------------------------------------------------------------------------------------------------------- */
+
+#home{
+    height:680px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/home.png) no-repeat center center/cover;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;  
+    object-fit: cover; 
+}
+
+.home-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-left: 150px;
+}
+
+.home-div{
+    width: 30%;
+    margin: 0 0 0 20px;
+}
+
+.home-heading{
+    font-size: 5rem;
+    text-align: start;
+    font-family: 'Karla', sans-serif; 
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.home-content{
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    padding: 3px;
+    font-weight:500;
+    line-height: 0.9cm;
+    letter-spacing: 1px;
+}
+
+.social-distancing{
+    color: #101018;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.button{
+    border: none;
+    margin-top: 10px;
+}
+
+.button-hover:hover{
+    color: #f0efeb;
+    background-color: #3e576f;
+} 
+
+.button-text{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+    font-family: 'Karla', sans-serif;
+    color: #101018;
+    background-color:#aad5e7;
+}
+
+
+
+/* distance-calculator================================================================================================================ */
+#distance-calculator{
+    background-color: #f0efeb;
+    height: 900px;
+}
+
+.dist-head{
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.dist-head-bold{
+    color: #b4356e;
+}
+
+.line2{
+    padding-top: 22px;
+    padding-bottom: 120px;
+}
+
+.distCalc-wrapper{
+    height:680px;
+    display: flex;
+    flex-direction: column;
+    background: url(/img/distCalc.png) no-repeat center center/cover;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;  
+    object-fit: cover;
+}
+
+.distCalc-box{
+    align-self: flex-end;
+    display: flex;
+    padding-right: 50px;
+    width: 50%;
+    padding-top: 90px;
+    flex-direction: column;
+}
+
+.distCalc-subBox{
+    padding: 10px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-content{
+    padding: 7px 7px 7px 0;
+    display: flex;
+}
+
+/* .ip-desc{
+    width: 50%;
+} */
+
+.ip-box{
+    align-self: center;
+}
+
+.distance{
+    margin-right: 10px;
+}
+
+.length{
+    margin-right: 17px;
+}
+
+.breadth{
+    margin-right: 3px;
+}
+
+.textfield{
+    padding: 5px 0 5px 5px;
+}
+
+.btn-cal-hover:hover{
+    color: #f0efeb;
+    background-color: #976ba6;
+}
+
+.btn-cal-text{
+    color: #101018;
+    background-color:#edbdd1;
+}
+

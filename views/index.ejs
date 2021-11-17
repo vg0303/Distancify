@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distancify</title>
+    <link rel="stylesheet" href="/css/index_style.css">
+
+
+    <!-- fonts======================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- navbar========================================================================================== -->
+
+    <nav class="navbar">
+        <div id="logo">
+            <img src="/img/logo.png" alt="Distancify.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home" class="nav-content distancify">Distancify</a></li>
+            <li class="item item-first"><a href="#home" class="hover nav-content">Home</a></li>
+            <li class="item"><a href="#distance-calculator" class="hover nav-content">Calculator</a></li>
+            
+        </ul>
+    </nav>
+    
+    <!-- home=========================================================================================== -->
+
+    <section id="home">
+        <div class="home-wrapper">
+            <div class="home-div">
+                <p class="home-heading"><b>Distancify</b><br></p>
+            </div>
+            <div class="home-div">
+                <br><p class="home-content">Want to stay away from Covid-19?<br>Get Vaccinated, keep your Mask On and Sanitize your hands. Are we missing anything?</p><br>
+                <p class="home-content social-distancing">SOCIAL DISTANCING!</p>
+                <br><p class="home-content">Maintain a safe Distance to avoid virus transmission.</p>
+            </div>
+            <div class="home-div">
+                <br><button class="button"><a href="#distance-calculator" class="button-hover button-text">Distancify Calculator</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- dist calc===================================================================================== -->
+
+    <section id="distance-calculator">
+        <p class="dist-head">Maintain <b class="dist-head-bold">SOCIAL DISTANCING </b>by accomadating</p> <p class="dist-head line2">only a certain number of people in a room</p>
+        
+        <div class="distCalc-wrapper">
+            <div class="distCalc-box">
+                <form action="/" method="POST">
+                    <div class="distCalc-subBox input">
+                        <div class="input-content">
+                            <div class="ip-desc">
+                                <p class="home-content distance">Enter ideal distance to be maintained: </p>
+                            </div>
+
+                            <div class="ip-desc ip-box">
+                                <!-- figure out -->
+                                <input type="text" name="distance" id="input-distance" placeholder="Distance in feet" class="textfield">
+                            </div>
+                        </div>
+                        
+                        <div class="input-content">
+                            <div class="ip-desc">
+                                <p class="home-content length">Enter length (feet) of the given Room: </p>
+                            </div>
+
+                            <div class="ip-desc ip-box">
+                                <!-- figure out -->
+                                <input type="text" name="length" id="input-length" placeholder="Length in feet" class="textfield">
+                            </div>
+                        </div>
+                        
+                        <div class="input-content">
+                            <div class="ip-desc">
+                                <p class="home-content breadth">Enter breadth (feet) of the given Room: </p>
+                            </div>
+
+                            <div class="ip-desc ip-box">
+                                <input type="text" name="breadth" id="input-breadth" placeholder="Breadth in feet" class="textfield">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="distCalc-subBox">
+                        <button class="button button-hover button-text btn-cal-hover btn-cal-text" type="submit" id="btn">CALCULATE</button> 
+                    </div>
+                </form>
+
+                <div class="distCalc-subBox output">
+                    <!-- figure out OUtput-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
